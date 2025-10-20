@@ -33,7 +33,7 @@ void main() {
   // float wave = range > t1 ? 1.0 : 0.0;
   float wave = inverseLerp(range - t1, 0.0, 0.05);
   float waveLine = inverseLerp(abs(range - t1), 0.0, 0.05);
-  float linearLine = inverseLerp(abs(range - vUvs.x*0.0), 0.0, 0.05); // note the width changes with slope steapness, hence sin changing the width
+  float linearLine = inverseLerp(abs(range - vUvs.x*0.0), 0.0, 0.05); // note the width changes with slope steapness, which is why sin changing the width
 
   colour = vec3(wave);
   // colour = vec3(waveLine);
