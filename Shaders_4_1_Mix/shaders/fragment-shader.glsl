@@ -6,6 +6,7 @@ void main() {
 
   // value is f(x), which is why, the line is created around vUvs.y = value
   // by using uvs we are in a very literal sense saying, keep going in this direction until you reach this point. Good, now repeat at the next step
+  float value1 = vUvs.x;
   float value2 = smoothstep(0.0, 1.0, vUvs.x);
 
   float line = smoothstep(0.0, 0.005, abs(vUvs.y - 0.5)); // 0 to 0.005 is the new 0 to 1
